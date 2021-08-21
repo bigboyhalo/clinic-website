@@ -1,0 +1,223 @@
+<html>
+
+<head>
+    <title >ENT and voice Clinic</title>
+
+    <meta name="viewreport" content="width-device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar-inverse" style="position: sticky;top: 0;z-index: 99999">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="#mynavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="a">Kushaan ENT and voice clinic</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="#facilities_available">Facilities available</a></li>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#book_apointment">Book apointment</a></li>
+                <li><a href="#contactus">Contact Us</a></li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <div class="announcement">
+        <marquee id="#arqueeStyle" onmouseover="this.stop();" onmouseout="this.start();">
+            *** Feel free to ask queries on drmanjumk@gmail.com ***
+        </marquee>
+    </div>
+
+
+    <iframe id="video" src="clinic.mp4" width="600" height="450" style="border: 0;" allowfullscreen="" loading="lazy">
+        <br>
+        <img src="data:image/jpeg;base64,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">
+        <br>
+        <br>
+        <p>Dr Manjunath MK is a Laryngologist based in Bangalore. After completing his Master of surgery
+            (MS) in ENT from Rajiv Gandhi University of health sciences, Bangalore, he started pursuing his
+            dream of becoming voice and airway surgeon. In this pursuit, he got trained himself under the
+            internationally renowned laryngologist Dr. Paul Castellanos at the University of Alabama at
+            Birmingham. He also underwent brief period s of training at Deenanath Mangeshkar hospital,
+            Pune and Emory University, Atlanta, USA. He resisted the desire of staying back in the US and
+            leading a comfortable life and came back to India so that he can utilize his skills to help the
+            needy in his own country. He expertise in the field of advanced laryngology including
+            bronchoesophagology. This includes taking care of voice, airway or the breathing problems,
+            swallowing and snoring/ sleep apnea problems. </p>
+    </iframe>
+
+    <br>
+    <br>
+    <br>
+    
+    
+    
+    <section id="facilities_available"></section>
+
+
+
+    <section id="profile">
+
+    <div class="container"></div>
+
+    <div class="page_header" id="profile">
+        <div class="travel_mainDiv">
+            <p>Dr Manjunath MK is a Laryngologist based in Bangalore. After completing his Master of surgery
+                (MS) in ENT from Rajiv Gandhi University of health sciences, Bangalore, he started pursuing his
+                dream of becoming voice and airway surgeon. In this pursuit, he got trained himself under the
+                internationally renowned laryngologist Dr. Paul Castellanos at the University of Alabama at
+                Birmingham. He also underwent brief period s of training at Deenanath Mangeshkar hospital,
+                Pune and Emory University, Atlanta, USA. He resisted the desire of staying back in the US and
+                leading a comfortable life and came back to India so that he can utilize his skills to help the
+                needy in his own country. He expertise in the field of advanced laryngology including
+                bronchoesophagology. This includes taking care of voice, airway or the breathing problems,
+                swallowing and snoring/ sleep apnea problems. </p>
+    </section>
+
+    <br>
+    <br>
+    <br>
+    <vr>
+        <br>
+        <br>
+        <br>
+    </vr>
+
+    <span class="travel_mainDiv">
+
+        <br>
+        <br>
+        <br>
+
+        <h5 class="text-success text-left text-capitalize">Education</h5>
+        <p class="text-muted text-left">
+            EDUCATION
+
+             MBBS : Sree Siddhartha Medical College, Tumkur, Karnataka, India. 2002
+
+             MS (ENT) : Sree Siddhartha Medical College, Tumkur, Karnataka, India. 2006
+
+             FELLOWSHIP IN LARYNGOLOGY, BRONCHOESOPHAGOLOGY, University of
+            Alabama at Birmingham, AL, USA from July 2014 to august 2015.
+        </p>
+    </span>
+
+    <div class="travel_mainDiv">
+        <h5 class="text-success text-left text capitalize">Other certifications</h5>
+        <p class="text-muted text-left">
+            OTHER CERTIFICATIONS
+
+
+             UNITED STATES MEDICAL LICENSING EXAMINATION
+
+             VOICE AND AIRWAY FELLOWSHIP at Deenanath Mangeshkar Hospital and
+            Research Centre, Pune from July 2012 to August 2012
+
+             MINIFELLOWSHIP IN LARYNGOLOGY, Emory University hospital, Atlanta, USA
+            from October 2012 to November 2012.
+        </p>
+    </div>
+
+
+    <div class="travel_mainDiv">
+        <h5 class="text-success text-left text capitalize">Experience</h5>
+        <p class="text-muted text-left">
+
+
+            EXPERIENCE
+
+
+             FELLOW / INSTRUCTOR, Division of Otolaryngology, Department of
+            Surgery, University of Alabama at Birmingham, Birmingham, AL, USA
+
+             ASSISTANT PROFESSOR in OTOLARYNGOLOGY, Sapthagiri institute of
+            medical sciences and research center, Bangalore, India.
+
+             SPECIALIST ENT SURGEON. Al Qunfudah General Hospital, Al Qunfudah,
+            Saudi Arabia
+
+             ASSISTANT PROFESSOR in OTOLARYNGOLOGY, Sree Siddhartha
+            Medical College, Tumkur, Karnataka, India
+        </p>
+    </div>
+
+
+    <div class="travel_mainDiv">
+        <h5 class="text-success text-left text capitalize">RESEARCH AND PRESENTATION</h5>
+        <p class="text-muted text-left">
+
+            RESEARCH AND PRESENTATION
+             Geetha Chary, Manjunath MK, Channakeshava TA, Shadab MD. (2011). Factors
+            Influencing Delayed Presentation of Congenitally Hearing Impaired Children in
+            Rural India. Indian Journal of Otolaryngol Head and Neck Surgery. 2012;64
+            (4):330-332
+             Manjunath M.K., Jyothi Swarup R., Geetha Chary, Shadab MD. (2011)
+            Myringosclerosis: An Indication of a Blocked Aditus. Indian Journal of
+            Otolaryngol Head and Neck Surgery. 2012;64(3):230-232
+             Manjunath M.K., Annam V, Suresh D.R. (2010, March). Significance of Free
+            Radical Injury in Laryngeal and Hypopharyngeal Cancers. J Laryngol Otol. 124
+            (3):315-7
+        </p>
+    </div>
+    
+    
+    
+
+
+    <div class="container"></div>
+    <div class="page-header col-lg-12 col-od-12 col-sn-12 col-xs-12">
+        <h2 class="text-capitalize">Book apointment</h2>
+    </div>
+    <section id="book_apointment">
+        <label>mail the doctor</label>
+        <a href="mailto:kuhaanentclinic@outlook.com?Subject=Hi can you fix this  apointment" >
+            <h5><i class="fa fa-envelope"></i>&nbsp;&nbsp;my@gmail.com</h5>
+        </a>
+
+        <br>
+
+
+
+
+
+
+    <div class="container">
+    </div>
+    <div class="page-header col-lg-12 col-od-12 col-sn-12 col-xs-12">
+        <h2 class="text-capitalize">Contact Us</h2>
+    </div>
+    <section id="contactus">
+        <div id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.076130395388!2d77.53410531430438!3d12.966980218489311!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3ddfaa4e57d7%3A0x2ee71e8605891687!2sKushaan%20ENT%20and%20Voice%20Clinic!5e0!3m2!1sen!2sin!4v1618036476090!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+        <div id="details">
+            <h1>Address:</h1>
+            <h4>2949, Service Rd, opposite maruti Mandira, Vijaynagar, Hosahalli Extension, Vijayanagar, Bengaluru, Karnataka 560040</h4>
+            <h5>Phone number: 9742599090</h5>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
